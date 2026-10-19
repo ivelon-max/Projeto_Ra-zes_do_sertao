@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4ebdd">
+  <meta name="description" content="Catálogo cultural do Sertão Central do Ceará: agentes, saberes, tradições e memória.">
+  <title>Raízes do Sertão — Catálogo Cultural</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="site-header">
+      <a class="brand" href="#/inicio" aria-label="Raízes do Sertão - início">
+        <span class="brand-mark">R<span>•</span></span>
+        <span><strong>Raízes do Sertão</strong><small>Catálogo cultural</small></span>
+      </a>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menu">☰</button>
+      <nav class="main-nav" id="main-nav">
+        <a href="#/inicio" data-nav="inicio">Início</a>
+        <a href="#/agentes" data-nav="agentes">Agentes culturais</a>
+        <a href="#/municipios" data-nav="municipios">Municípios</a>
+        <a href="#/manifestacoes" data-nav="manifestacoes">Manifestações</a>
+        <a href="#/memoria" data-nav="memoria">Patrimônio e memória</a>
+        <a href="#/sobre" data-nav="sobre">Sobre</a>
+      </nav>
+      <a class="admin-link" href="#/admin">Área administrativa <span>↗</span></a>
+    </header>
+    <main id="page" tabindex="-1"></main>
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <span class="brand-mark">R<span>•</span></span>
+        <div><strong>Raízes do Sertão</strong><p>Memória, território e identidade cultural.</p></div>
+      </div>
+      <div class="footer-note">Um catálogo em construção, dedicado às pessoas que mantêm viva a cultura do sertão.</div>
+      <div class="footer-bottom"><span>© <span id="year"></span> Raízes do Sertão</span><a href="#/sobre">Sobre o projeto</a><a href="#/admin">Acesso administrativo</a></div>
+    </footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
